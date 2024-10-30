@@ -254,7 +254,7 @@ ALTER TABLE `brands`
 -- Indexes for table `card_details`
 --
 ALTER TABLE `card_details`
-  ADD PRIMARY KEY (`product_id`);
+  ADD PRIMARY KEY (`product_id`,`ip_address`);
 
 --
 -- Indexes for table `categories`
@@ -348,3 +348,7 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+ALTER USER 'root'@'%' REQUIRE SSL;
+FLUSH PRIVILEGES;
