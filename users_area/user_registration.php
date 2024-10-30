@@ -81,7 +81,7 @@ $dotenv->load();
             </div>
         </div>
     </div>
-    <script src="<?php echo $static_base_url; ?>/assets//js/bootstrap.bundle.js"></script>
+    <script src="<?php echo $static_base_url; ?>/assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
