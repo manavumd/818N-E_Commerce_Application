@@ -111,7 +111,7 @@ if (isset($_POST['user_register'])) {
         // Upload image to S3
         $s3Client = new S3Client([
             'region'  => $_ENV['AWS_REGION'],
-            // 'version' => 'latest',
+            'version' => '2006-03-01',
             'credentials' => [
                 'key'    => $_ENV['AWS_ACCESS_KEY_ID'],
                 'secret' => $_ENV['AWS_SECRET_ACCESS_KEY'],
